@@ -8,9 +8,9 @@ backend_access_log|后台访问日志|无
 backend_user_groups|后台用户组|默认一条
 backend_user_preferences|后台用户偏好|默认一条
 backend_user_roles|后台用户角色|默认两条
-backend_user_throttle| |
+backend_user_throttle|后台用户节流|无
 backend_users|后台管理员信息|默认1条
-backend_users_groups|后台用户和后台用户组的关联表|
+backend_users_groups|后台用户和后台用户组的关联表|默认1条
 cache|缓存 |无
 cms_theme_data|主题数据|无
 cms_theme_logs|主题日志|无
