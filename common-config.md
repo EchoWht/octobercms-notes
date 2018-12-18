@@ -4,9 +4,8 @@
 
 ### app.php
 
-    'url' => 'http://october.wht.ink/'
+    'url' => 'http://xxx/'
     'key' => 'Hk8jte9BXWzkRUhYwpbT6ElQHYUXjHF6'
-    'cipher' => 'AES-256-CBC'
     
 ### database.php
 

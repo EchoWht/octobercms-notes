@@ -22,10 +22,34 @@
 
 ## 项目迁移
 
-实际开发中我们肯定需要多次迁移项目，因为我们可能在开发中已经修改了October的核心代码，所以不能通过以上的安装方式安装October，我打算还是使用git来迁移项目或者更新项目。
+实际开发中我们肯定需要多次迁移项目，因为我们可能在开发中已经修改了October的核心代码，所以不能通过以上的安装方式安装October，我打算还是使用git来迁移项目或者更新项目。以下有两种方式管理October项目，我建议**第一种**
 
-### 方式一：Fork一份October源码
+### 方式一：Fork October
+
+#### fork october 的原始仓库
+    
+    git clone https://github.com/EchoWht/october
+    
+#### 配置
+    
+配置config/app.php config/database.php
+
+#### 安装依赖
+
+    composer install
+
+#### 创建库表以及初始化数据
+
+    php artisan october:up
 
 ### 方式二：新建一个git仓库，将安装后的源码提交到仓库，通过这个仓库来管理项目。
+
+#### 克隆源码
+
+#### 执行数据库迁移命令（生成全新的数据表以及数据）
+        
+    php artisan october:up
+    
+> **注意：** 默认后台管理员用户名（admin）和密码（admin）,如需修改，请修改`october/modules/backend/database/seeds/SeedSetupAdmin.php`文件。
 
 ## 数据迁移
