@@ -24,7 +24,16 @@
 
     > php artisan october:up
 
+1. 配置定时任务以及队列
 
+    ```bash
+    crontab -e
+ 
+    * * * * * php /path/to/artisan schedule:run >> /dev/null 2>&1
+    
+    php artisan queue:work --once
+    ```
+    
 ### 方式二：新建一个git仓库，将安装后的源码提交到仓库，通过这个仓库来管理项目。
 
 #### 克隆源码
