@@ -6,13 +6,12 @@ October 的开发工作主要在开发plugin和theme上，根据作者的建议�
 
     plugins
     themes
-    
+
 ## fork后保持和原始仓库同步更新
-    
+
 当我们fork作者的原始仓库时，原始仓库有代码更新时我们的仓库是不会同步更新的，如果需要将原始仓库的代码同步到自己的仓库中，需要进行下面的操作
 
 1. git remote add octobercms https://github.com/octobercms/october.git
-1. git fetch octobercms
-1. git merge octobercms/master
-1. git push -u origin master 
-  
+2. git fetch octobercms
+3. git merge octobercms/master
+4. git push -u origin master 
