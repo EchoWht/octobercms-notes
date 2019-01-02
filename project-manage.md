@@ -18,7 +18,7 @@
 
    > chmod -R 777 october/
 
-5. 安装依赖
+5. 安装依赖(安装后会发现modules中的三个模块的更新并不和原始仓库一样，通过composer安装的这三个模块会比原始仓库的新，这使我很纠结)
 
    > composer install
 
