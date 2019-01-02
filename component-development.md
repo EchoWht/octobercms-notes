@@ -1,5 +1,7 @@
 # 组件开发
 
+## 先在 *Setting->Misc->Builder* 设置插件作，这样的好处是Bulider会自动识别你自己的插件 
+
 ## 新建一个组件
 
  假设现在要做一个"中国城市 ChinaCity"的扩展(Plugin),这个扩展有一个叫"城市选择 Area"的组件(Component)

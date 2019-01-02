@@ -13,5 +13,6 @@ October 的开发工作主要在开发plugin和theme上，根据作者的建议�
 
 1. git remote add octobercms https://github.com/octobercms/october.git
 2. git fetch octobercms
-3. git merge octobercms/master
+3. git merge octobercms/master 或者 git merge octobercms/develop
 4. git push -u origin master 
+5. php artisan october:up 
