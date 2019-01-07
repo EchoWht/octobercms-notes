@@ -10,23 +10,31 @@
 
    > git clone https://github.com/EchoWht/october
 
-2. 创建对应的数据库    
+1. 创建对应的数据库    
 
-3. 配置 **config/app.php** **config/database.php**(参考[项目迁移时必需要配置的文件](common-config.md))
+1. 配置 **config/app.php** **config/database.php**(参考[项目迁移时必需要配置的文件](common-config.md))
 
-4. 给予文件夹权限
+1. 给予文件夹权限
 
    > chmod -R 777 october/
 
-5. 安装依赖(安装后会发现modules中的三个模块的更新并不和原始仓库master一样，通过composer安装的这三个模块会比原始仓库的新，这使我很纠结)
+1. 安装依赖(安装前可以先[merge官方仓库的develop分支](git-notes.md)，默认composer配置下安装和develop分支内容是一样的，如果需要稳定版的可以配置先composer文件中的module下三个模块的版本)
 
    > composer install
 
-6. 迁移库表以及初始化数据
+1. 迁移库表以及初始化数据
 
    > php artisan october:up
 
-7. 配置定时任务以及队列
+1. 迁移插件和主题
+
+   1. [安装和配置常用插件](use-plugin.md)         
+        
+   1. 主题
+   
+1. 常用配置，如：邮箱配置
+
+1. 配置定时任务以及队列
 
    ```bash
     crontab -e
@@ -35,12 +43,6 @@
    
     php artisan queue:work --once
    ```
-
-8. 迁移插件和主题
-
-   1. 插件
-
-   2. 主题
 
 ### 方式二：新建一个git仓库，将安装后的源码提交到仓库，通过这个仓库来管理项目。
 
