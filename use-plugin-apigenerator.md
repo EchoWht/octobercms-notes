@@ -13,3 +13,4 @@
 ### 迁移路由
 
  在自己的Plugin.php同级目录下新建路由，并复制相应地两行路由代码，修改参数中的namespace
+ { 'fillable': 'id,title,url,user_id', 'relation': [{ 'name': 'user', 'fillable': 'id' }
